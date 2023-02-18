@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CFILEI:
+gcc -E $CFILEI -o c
