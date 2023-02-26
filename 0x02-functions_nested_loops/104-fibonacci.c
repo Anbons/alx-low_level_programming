@@ -42,7 +42,6 @@ int main(void)
 		n2 = fn;
 		n22 = (fn2 % 1000000000);
 	}
-
 	if (((n1 + n2) < 0) && boolean == 1)
 		boolean = 0;
 	}
