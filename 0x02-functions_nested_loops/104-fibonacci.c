@@ -2,15 +2,13 @@
 
 /**
  *  main - Prints the first 98 Fibonacci numbers
- * 
  * Return: Always 0.
  */
 int main(void)
 {
 	int c, boolean, boolean2;
 	long
-
-	int n1, n2, fn, fn2, n11, n22;
+		int n1, n2, fn, fn2, n11, n22;
 	n1 = 1;
 	n2 = 2;
 
@@ -29,11 +27,11 @@ int main(void)
 		{
 		if (boolean2)
 			{
-				n11 = n1 % 1000000000;
-				n22 = n2 % 1000000000;
-				n1 = n1 / 1000000000;
-				n2 = n2 / 1000000000;
-				boolean2 = 0;
+			n11 = n1 % 1000000000;
+			n22 = n2 % 1000000000;
+			n1 = n1 / 1000000000;
+			n2 = n2 / 1000000000;
+			boolean2 = 0;
 			}
 			fn2 = (n11 + n22);
 			fn = n1 + n2 + (fn2 / 1000000000);
