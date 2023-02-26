@@ -9,7 +9,6 @@ int main(void)
 	int c;
 	long
 
-
 	int n1, n2, fn;
 
 	n1 = 1;
