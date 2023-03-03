@@ -7,21 +7,26 @@
  * @src: string which may/may not be null terminated.
  * @n: max number of byte to be coppied from src
  *
- * Return: it return dest if successful
+ * Return: a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int c;
-	char *i = dest;
+	int i, j;
 
-	while (*i != '\0')
-	{
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
 		i++;
-	}
-	for (c = 0; c < n && src[c] != '\0'; c++)
+
+	while (src[j] != '\0' && j < n)
 	{
-		*i = src[c];
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	*i = '\0';
+
+	dest[i] = '\0';
+
 	return (dest);
 }
