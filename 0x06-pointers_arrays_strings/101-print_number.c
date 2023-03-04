@@ -17,11 +17,9 @@ void print_number(int n)
 	else
 	{
 		m = n;
+		d = m;
+		count = 1;
 	}
-
-	d = m;
-	count = 1;
-
 	while (d > 9)
 	{
 		d /= 10;
